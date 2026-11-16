@@ -1,0 +1,13 @@
+{
+  "minecraft": "1.21.1",
+  "neoforge": {
+    "version": "21.1.248"
+  },
+  "java": 21,
+  "launch": {
+    "client": {
+      "minMemory": 1024,
+      "maxMemory": 6144
+    }
+  }
+}

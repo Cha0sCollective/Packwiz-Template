@@ -1,0 +1,10 @@
+# Maintainer notes and local runtime files are not distributed.
+README.md
+**/README.md
+world/
+world_*/
+logs/
+crash-reports/
+packwiz.json
+.packwiz-cache/
+.cache/

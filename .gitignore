@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+/dist/
+*.jar
+*.jar.disabled
+/pack/world*/
+/pack/logs/
+/pack/crash-reports/
+/pack/packwiz.json
+/pack/.packwiz-cache/
+/pack/.cache/
