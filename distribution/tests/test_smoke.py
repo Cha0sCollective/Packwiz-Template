@@ -132,6 +132,22 @@ class Harness(unittest.TestCase):
                 main()
         self.assertEqual(exc.exception.code, 2)
 
+    def test_no_server_launch_without_explicit_eula_acceptance(self):
+        argv = ['smoke.py', '--repository', 'example/pack', '--pack-sha', 'a' * 40]
+        with patch('sys.argv', argv), patch.object(Runner, 'run') as run, redirect_stderr(StringIO()) as errors:
+            with self.assertRaises(SystemExit):
+                main()
+            run.assert_not_called()
+            self.assertIn('explicitly pass --accept-eula', errors.getvalue())
+
+    def test_invalid_repository_is_rejected_before_launch(self):
+        argv = ['smoke.py', '--repository', '../pack', '--accept-eula', '--pack-sha', 'a' * 40]
+        with patch('sys.argv', argv), patch.object(Runner, 'run') as run, redirect_stderr(StringIO()) as errors:
+            with self.assertRaises(SystemExit):
+                main()
+            run.assert_not_called()
+            self.assertIn('owner/repository', errors.getvalue())
+
 
 if __name__ == '__main__':
     unittest.main()
