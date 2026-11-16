@@ -13,4 +13,3 @@ Install [Prism Launcher](https://prismlauncher.org/), choose **Add Instance → 
 Public and Beta have distinct instance identities. Use a separate instance when switching channels or versions. Back up worlds; a fixed modpack snapshot is not a world rollback.
 
 Packwiz updates managed pack files. Changes to the Minecraft version, loader or launcher settings require importing a new ZIP or updating Prism's runtime yourself. Existing instances do not acquire new launcher metadata just because a rolling ZIP was rebuilt.
-

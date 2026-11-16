@@ -42,4 +42,3 @@ The output filename can be chosen for local builds. Published assets use the per
 Each ZIP has a `.sha256` sidecar and records both pack and packaging commits. It contains only Prism metadata, instructions, notices and two pinned, hash-verified Packwiz tools. Gameplay downloads remain upstream and depend on continued provider availability.
 
 Run `python -m unittest discover -s distribution/tests -v` for release safeguards and `python distribution/release.py validate` for managed-file and runtime checks. GitHub CI also refreshes Packwiz and refuses stale committed hashes, then builds both channels and a fixed import on Windows and Linux. These packaging checks do not launch Minecraft.
-

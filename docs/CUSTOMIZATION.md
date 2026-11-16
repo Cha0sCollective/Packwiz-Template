@@ -24,4 +24,3 @@ The smoke test saves a chest, stone block, diamond items and a random scoreboard
 Update Packwiz and GitHub action pins deliberately and test changes. The Packwiz CLI commit is recorded in `release.py` and pinned in `check.yml` and `promote.yml`; update all three together. Tool JARs are fetched from their pinned upstream release URLs and checked against `prism-tools.json`.
 
 CH4OS branding, mod selections, mirrors, maps, server addresses, old release migrations and maintainer-specific agent profiles are intentionally absent. Attribution remains in [NOTICE.md](../NOTICE.md).
-

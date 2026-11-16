@@ -36,4 +36,3 @@ Release publication starts **disabled**. Fork settings, reviewers and Actions va
 [Setup](docs/SETUP.md) · [Contributing](docs/CONTRIBUTING.md) · [Releases](distribution/README.md) · [Prism](docs/PRISM.md) · [Servers](docs/SERVER.md) · [Customization](docs/CUSTOMIZATION.md)
 
 Project-authored files are [MIT licensed](LICENSE.txt). See [attribution](NOTICE.md) for the source revisions. Upstream downloads retain their own licenses.
-

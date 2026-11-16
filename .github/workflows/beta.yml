@@ -22,6 +22,9 @@ jobs:
         with:
           fetch-depth: 0
           persist-credentials: false
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.12'
       - uses: actions/setup-go@924ae3a1cded613372ab5595356fb5720e22ba16 # v6
         with:
           go-version: '1.24.6'
@@ -34,4 +37,3 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: python3 distribution/release.py beta
-

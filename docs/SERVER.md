@@ -23,4 +23,3 @@ python distribution/smoke.py --repository YOUR-OWNER/YOUR-PACK --pack-sha FULL_4
 ```
 
 Choose a new output directory each run. No server starts without `--accept-eula`. Review both phase logs and `report.json`; `lifecycle_passed_logs_unreviewed` means only the recorded lifecycle checks passed. This check does not exercise real clients, mod-specific behavior or an existing world's upgrade.
-

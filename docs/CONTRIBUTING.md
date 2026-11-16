@@ -27,4 +27,3 @@ Changing Minecraft, the loader, Java or memory requirements also affects `distri
 Test affected gameplay in disposable instances. Hash validation and ZIP checks do not prove that Minecraft launched, that a client connected, or that an old world upgrades safely. Record the exact revision, checks performed and remaining limitations in the PR.
 
 Push beta normally. Run the promotion workflow from public when ready; it captures and tests a single beta commit. Pull beta after preparation, since the workflow may align version labels in a new commit. Direct public pushes immediately affect players and bypass the release process. See [release operations](../distribution/README.md).
-

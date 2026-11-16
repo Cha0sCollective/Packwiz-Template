@@ -67,4 +67,3 @@ The generic server test checks lifecycle and vanilla block/item persistence. It 
 - [GitHub template repositories and branch history](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-template-repository)
 - [GitHub deployment environments and reviewer availability](https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/manage-environments)
 - [Packwiz getting started](https://packwiz.infra.link/tutorials/creating/getting-started/)
-
